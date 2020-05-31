@@ -7,5 +7,5 @@ web-project repository
 # 2. 스토리보드
 
 # 3. 레이아웃
-![Alt text](/프로젝트레이아웃.png)
-![Alt text](/Web Game World.png)
+![Alt text](/path/to/프로젝트레이아웃.png)
+![Alt text](/path/to/Web Game World.png)
