@@ -8,5 +8,4 @@ web-project repository
 ![Web Game World](https://user-images.githubusercontent.com/40714505/83351619-9fc74700-a380-11ea-9739-fb4450011d51.png)
 
 # 3. 레이아웃
-![Alt text](/path/to/프로젝트레이아웃.png)
-![Alt text](/path/to/Web Game World.png)
+![프로젝트레이아웃](https://user-images.githubusercontent.com/40714505/83351601-6db5e500-a380-11ea-8f32-61191c1bf6ca.PNG)
