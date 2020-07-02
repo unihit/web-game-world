@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="20181299_황인태">
+    <meta name="description" content="나만의 웹사이트 만들기 프로젝트">
+
+    <title>Game World</title>
+
+    <!--CSS Style-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/lightgallery.css">
+
+    <!--web font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--스킵 네비게이션-->
+    <div id="skip">
+        <a href="#cont_nav">전체 메뉴 바로가기</a>
+        <a href="#cont_ban">배너 메뉴 바로가기</a>
+        <a href="#cont_cont">컨텐츠 메뉴 바로가기</a>
+    </div>
+    <!--//스킵 네비게이션-->
+    <div id="wrap">
+        <div id="header">
+            <div class="container">
+                <div class="header">
+                    <div class="header-menu">
+                        <!--로그인 팝업-->
+                        <a href="#" class="layer">로그인</a>
+                        <a href="#">게임소개</a>
+                        <a href="#">즐겨찾기한 게임</a>
+                    </div>
+                    <!--//헤더 메뉴-->
+                    <div class="header-tit">
+                        <h1>황인태의 Game World</h1><br>
+                        <a href="https://blog.naver.com/unihit">WELCOME!</a>
+                    </div>
+                    <!--//헤더 타이틀-->
+                    <div class="header-icon">
+                        <a href="mailto:unihit@naver.com" class="icon1"><span class="ir_pm">mail</span></a>
+                        <a href="#" class="icon2"><span class="ir_pm">facebook</span></a>
+                        <a href="#" class="icon3"><span class="ir_pm">twitter</span></a>
+                        <a href="https://github.com/unihit" class="icon4"><span class="ir_pm">github</span></a>
+                    </div>
+                    <!--//헤더 아이콘-->
+                </div>
+            </div>
+        </div>
+        <!--//header-->
+        <div id="contents">
+            <div id="cont_nav">
+                <div class="container">
+                    <h2 class="ir_su">전체 메뉴</h2>
+                    <div class="nav">
+                        <div>
+                            <h3>EASY Game</h3>
+                            <ol>
+                                <li><a href="#">끝말잇기</a></li>
+                                <li><a href="#">구구단</a></li>
+                                <li><a href="#">숫자야구</a></li>
+                                <li><a href="#">틱택토</a></li>
+                                <li><a href="#">로또번호 맞추기</a></li>
+                                <li><a href="#">가위바위보</a></li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h3>HARD Game</h3>
+                            <ol>
+                                <li><a href="#">지뢰찾기</a></li>
+                                <li><a href="#">반응속도 테스트</a></li>
+                                <li><a href="#">카드짝맞추기</a></li>
+                                <li><a href="#">자스스톤</a></li>
+                                <li><a href="#">2048</a></li>
+                                <li><a href="#">테트리스</a></li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h3>Coming Soon</h3>
+                            <ol>
+                                <li><a href="#">포커</a></li>
+                                <li><a href="#">색상맞추기</a></li>
+                                <li><a href="#">워드퍼즐</a></li>
+                                <li><a href="#">스도쿠</a></li>
+                                <li><a href="#">오셀로</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//cont_nav-->
+            <div id="cont_tit">
+                <div class="container">
+                    <div class="tit">
+                        <h2>"Let's play fun Games!"</h2>
+                        <a href="#" class="btn"><span class="ir_pm">전체메뉴</span></a>
+                    </div>
+                </div>
+            </div>
+            <!--//cont_tit-->
+            <div id="cont_ban">
+                <div class="container">
+                    <div class="ban">
+                        <div><a href="#"><img src="img/banner_link1.jpg" alt="지뢰찾기"></a></div>
+                        <div><a href="#"><img src="img/banner_link2.jpg" alt="2048"></a></div>
+                        <div><a href="#"><img src="img/banner_link3.jpg" alt="테트리스"></a></div>
+                        <div><a href="#"><img src="img/banner_link4.jpg" alt="스도쿠"></a></div>
+                        <div><a href="#"><img src="img/banner_link5.jpg" alt="오델로"></a></div>
+                        <div><a href="#"><img src="img/banner_link6.jpg" alt="포커"></a></div>
+                    </div>
+                </div>
+            </div>
+            <!--//cont_ban-->
+            <div id="cont_cont">
+                <div class="container">
+                    <div class="cont">
+                        <div class="column col1">
+                            <!--게시판 설명을 2줄정도로 맞춰서 margin-bottom 맞출것!-->
+                            <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_tit">공지사항</span></h3>
+                            <p class="ico_desc">게임월드의 중요한 공지사항에 대해서 알아보세요!</p>
+                            <!--공지사항 게시판-->
+                            <!--탭메뉴 공지-->
+                            <div class="tab_menu">
+                                <h4 class="ir_su">탭 메뉴</h4>
+                                <ul>
+                                    <li class="active"><a href="#">공지사항1</a>
+                                        <ul>
+                                            <li><a href="#">첫 번째 공지사항 탭 메뉴 테스트 목록입니다. 첫 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">첫 번째 공지사항 탭 메뉴 테스트 목록입니다. 첫 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">첫 번째 공지사항 탭 메뉴 테스트 목록입니다. 첫 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">공지사항2</a>
+                                        <ul>
+                                            <li><a href="#">두 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">두 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">두 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">공지사항3</a>
+                                        <ul>
+                                            <li><a href="#">세 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">세 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">세 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--//탭메뉴 공지-->
+                            <!--최신 공지사항-->
+                            <div class="notice4 mt15">
+                                <h4>최신 <em>공지사항</em></h4>
+                                <ul>
+                                    <li><a href="#">첫번째 최신 공지사항 입니다.</a><span>2020.06.17</span></li>
+                                    <li><a href="#">두번째 최신 공지사항 입니다.</a><span>2020.06.17</span></li>
+                                    <li><a href="#">세번째 최신 공지사항 입니다.</a><span>2020.06.17</span></li>
+                                    <li><a href="#">네번째 최신 공지사항 입니다.</a><span>2020.06.17</span></li>
+                                </ul>
+                                <a href="#" class="more" title="더보기">더보기</a>
+                            </div>
+                            <!--//최신 공지사항-->
+                            <!--//공지사항 게시판-->
+                        </div>
+                        <!--//col1-->
+                        <div class="column col2">
+                            <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_tit">랭킹게시판</span></h3>
+                            <p class="ico_desc">명예의 전당으로 가장 높은 점수를 달성한 1위는 누구인지 알아보세요!</p>
+                            <!--랭킹 게시판-->
+                            <div class="notice">
+                                <h4>총점 랭킹</h4>
+                                <ul>
+                                    <li><a href="#">1위 id: sodifjoisdj12312312311111111111111111111111111111111111111</a><span>2020/06/03</span></li>
+                                    <li><a href="#">2위 id: sodifjoisdj12312312312</a><span>2020/06/03</span></li>
+                                    <li><a href="#">3위 id: sodifjoisdj1231231231</a><span>2020/06/03</span></li>
+                                    <li><a href="#">4위 id: sodifjoisdj32675674</a><span>2020/06/03</span></li>
+                                    <li><a href="#">5위 id: sodifjoisdj7894545634534</a><span>2020/06/03</span></li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                            <!--//랭킹 게시판-->
+                        </div>
+                        <!--//col2-->
+                        <div class="column col3">
+                            <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_tit">게임방법</span></h3>
+                            <p class="ico_desc">플레이 방법을 잘 모를 수 있는 게임의 하는 방법에 대해서 알아볼 수 있어요!</p>
+                            <!--게임소개 게시판-->
+                            <!--야구게임의 역사, 포커의 역사, 2048게임방법-->
+                                <div class="popup">
+                                    <ul>
+                                        <h4>인기있는 게임</h4>
+                                        <li class="lightgallery"><a href="#"><img src="img/tetris.jpg" alt="테트리스"></a></li>
+                                        <li class="lightgallery"><a href="#"><img src="img/2048.jpg" alt="2048"></a></li>
+                                        <li class="last lightgallery">
+                                            <a href="img/tictactoe1.jpg"><img src="img/tictactoe.jpg" alt="틱택토 하는 방법1"></a>
+                                            <a href="img/tictactoe2.jpg" style="display: none"><img src="img/tictactoe.jpg" alt="틱택토 하는 방법2"></a>
+                                            <a href="img/tictactoe3.jpg" style="display: none"><img src="img/tictactoe.jpg" alt="틱택토 하는 방법3"></a>
+                                            <a href="img/tictactoe4.jpg" style="display: none"><img src="img/tictactoe.jpg" alt="틱택토 하는 방법4"></a>
+                                            <a href="img/tictactoe5.jpg" style="display: none"><img src="img/tictactoe.jpg" alt="틱택토 하는 방법5"></a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <h4>어려운 게임</h4>
+                                        <li class="lightgallery"><a href="#"><img src="img/sudoku.jpg" alt="스도쿠"></a></li>
+                                        <li class="lightgallery"><a href="#"><img src="img/mineswiper.jpg" alt="지뢰찾기"></a></li>
+                                        <li class="last lightgallery">
+                                            <a href="img/poker1.jpg"><img src="img/poker.jpg" alt="포커 하는 방법1"></a>
+                                            <a href="img/poker2.jpg" style="display: none"><img src="img/poker.jpg" alt="포커 하는 방법2"></a>
+                                            <a href="img/poker3.jpg" style="display: none"><img src="img/poker.jpg" alt="포커 하는 방법3"></a>
+                                            <a href="img/poker4.jpg" style="display: none"><img src="img/poker.jpg" alt="포커 하는 방법4"></a>
+                                            <a href="img/poker5.jpg" style="display: none"><img src="img/poker.jpg" alt="포커 하는 방법5"></a>
+                                            <a href="img/poker6.jpg" style="display: none"><img src="img/poker.jpg" alt="포커 하는 방법6"></a>
+                                            <a href="img/poker7.jpg" style="display: none"><img src="img/poker.jpg" alt="포커 하는 방법7"></a>
+                                            <a href="img/poker8.jpg" style="display: none"><img src="img/poker.jpg" alt="포커 하는 방법8"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            <!--//게임소개 게시판-->
+                        </div>
+                        <!--//col3-->
+                        <div class="column col4">
+                            <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_tit">공략게시판</span></h3>
+                            <p class="ico_desc">게임을 하면서 자신만의 공략을 만들어 사진을 찍고 공유해보세요!</p>
+                            <!--공략 게시판-->
+                            <div class="notice3">
+                                <h4>자신만의 공략을 자랑하세요!</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/notice01.jpg" alt="이미지1">
+                                            <strong>공략 1</strong>
+                                            <span>자신만의 공략1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/notice02.jpg" alt="이미지2">
+                                            <strong>공략 2</strong>
+                                            <span>자신만의 공략2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/notice03.jpg" alt="이미지3">
+                                            <strong>공략 3</strong>
+                                            <span>자신만의 공략3</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/notice04.jpg" alt="이미지4">
+                                            <strong>공략 4</strong>
+                                            <span>자신만의 공략4</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                            <!--//공략 게시판-->
+                        </div>
+                        <!--//col4-->
+                        <div class="column col5">
+                            <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_tit">자랑게시판</span></h3>
+                            <p class="ico_desc">사진으로 재미난 상황이나 자랑거리를 만들어 공유해보세요!</p>
+                            <!--오버 효과-->
+                            <!--자랑 게시판-->
+                            <div class="notice_hover">
+                                <h4>사진으로 자랑하기</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="img/sban01.jpg" alt="이미지1"><em>바로가기</em></span>
+                                            <strong>게임 자랑1</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="img/sban02.jpg" alt="이미지2"><em>바로가기</em></span>
+                                            <strong>게임 자랑2</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="img/sban03.jpg" alt="이미지3"><em>바로가기</em></span>
+                                            <strong>게임 자랑3</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--//자랑 게시판-->
+                            <!--//오버 효과-->
+                            <!--오버 효과2-->
+                            <div class="notice_hover2 mt15">
+                                <h4 class="ir_su">Mouse Hover</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="img/sban04.jpg" alt="이미지4"><em>바로가기</em></span>
+                                            <strong>게임 자랑4</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="img/sban05.jpg" alt="이미지5"><em>바로가기</em></span>
+                                            <strong>게임 자랑5</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="img/sban06.jpg" alt="이미지6"><em>바로가기</em></span>
+                                            <strong>게임 자랑6</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--//오버 효과2-->
+                        </div>
+                        <!--//col5-->
+                        <div class="column col6">
+                            <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_tit">추천게임</span></h3>
+                            <p class="ico_desc">오늘은 이런 게임은 어떠신가요? 재미있는 게임을 추천해드려요!</p>
+                            <!--추천게임 게시판-->
+                            <div class="gallery">
+                                <h4>오늘의 추천게임</h4>
+                                <div class="gallery_btn">
+                                    <ul>
+                                        <button class="gb_icon1 play"><a href="#"><span class="ir_pm">시작</span></a></button>
+                                        <button class="gb_icon2 pause"><a href="#"><span class="ir_pm">정지</span></a></button>
+                                        <button class="gb_icon3 prev"><a href="#"><span class="ir_pm">이전이미지</span></a></button>
+                                        <button class="gb_icon4 next"><a href="#"><span class="ir_pm">다음이미지</span></a></button>
+                                    </ul>
+                                </div>
+                                <div class="gallery_img">
+                                    <div><a href="#"><img src="img/gallery01.jpg" alt="2048"></a></div>
+                                    <div><a href="#"><img src="img/gallery02.jpg" alt="틱택토"></a></div>
+                                    <div><a href="#"><img src="img/gallery03.jpg" alt="헥사곤"></a></div>
+                                    <div><a href="#"><img src="img/gallery04.jpg" alt="색상맞추기"></a></div>
+                                    <div><a href="#"><img src="img/gallery05.jpg" alt="테트리스"></a></div>
+                                </div>
+                            </div>
+                            <!--//추천게임 게시판-->
+                        </div>
+                        <!--//col6-->
+                    </div>
+                </div>
+            </div>
+            <!--//cont_cont-->
+        </div>
+        <!--//contents-->
+        <div id="footer">
+            <div class="container">
+                <h2 class="ir_su">푸터 영역</h2>
+                <div class="footer">
+                    <ul>
+                        <li><a href="#">사이트 도움말</a></li>
+                        <li><a href="#">사이트 이용약관</a></li>
+                        <li><a href="#">사이트 운영규칙</a></li>
+                        <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+                        <li><a href="#">책임의 한계와 법적고지</a></li>
+                        <li><a href="#">게시중단요청 서비스</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <address>
+                        Copyright&copy;20181299_황인태 All Right Reserved
+                    </address>
+                </div>
+            </div>
+        </div>
+        <!--//footer-->
+    </div>
+    <!--//wrap-->
+    <!--layer popup-->
+    <div id="layer">
+        <a href="#" class="close">Close</a>
+        <!--로그인-->
+        <div id="login-wrap">
+            <h4 class="ir_su">로그인 정보</h4>
+            <form id="login_form" name="login_form" action="post">
+                <fieldset>
+                    <legend class="ir_su">로그인 및 관련 설정</legend>
+                    <div class="login_header">
+                        <h5 class="ir_su">로그인 보안</h5>
+                        <div class="lh_check">
+                            <input id="infor_check" type="checkbox" class="input_check">
+                            <label for="infor_check">로그인 상태 유지</label>
+                        </div>
+                        <div class="lh_ip">
+                            IP보안 <em>ON</em>
+                        </div>
+                    </div>
+                    <div class="login_content">
+                        <h5 class="ir_su">로그인 영역</h5>
+                        <div class="lc_text">
+                            <label for="uid" class="ir_su">아이디</label>
+                            <input type="text" id="uid" name="uid" class="input_text" maxlength="20">
+                            <label for="upw" class="ir_su">비밀번호</label><br>
+                            <input type="password" id="upw" name="upw" class="input_text" maxlength="20">
+                        </div>
+                        <button class="lc_btn" type="submit">로그인</button>
+                    </div>
+                    <div class="login_footer">
+                        <h5 class="ir_su">로그인 문제해결</h5>
+                        <ul>
+                            <li><a href="#"><strong>회원가입</strong></a> / </li>
+                            <li><a href="#">아이디</a>&middot;<a href="#">비밀번호 찾기</a></li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!--//로그인-->
+    </div>
+    <!--//layer popup-->
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    
+    <script>
+        // 슬라이드 메뉴
+        $(".tit .btn").click(function(e) {
+            e.preventDefault();
+            $("#cont_nav").slideToggle(200);
+            $(this).toggleClass("on");
+        });
+
+        // 배너
+        $(".ban").slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplayspeed: 3000,
+            dots: true,
+        });
+
+        // 탭메뉴
+        var $tab_list = $(".tab_menu");
+
+        $tab_list.find("ul ul").hide();
+        $tab_list.find("li.active > ul").show();
+
+        function tabMenu(e) {
+            e.preventDefault();
+            var $this = $(this);
+            $this.next("ul").show().parent("li").addClass("active").siblings("li").removeClass("active").find(">ul").hide();
+        }
+        $tab_list.find("ul>li>a").click(tabMenu).focus(tabMenu);
+
+        $(".layer").click(function(e) {
+            e.preventDefault();
+            $("#layer").css("display", "block");
+            $("#layer").slideDown();
+        });
+
+        // 갤러리
+        $(".gallery_img").slick({
+            arrows: false,
+            fade: true,
+            pauseOnHover: true,
+            infinite: true,
+            autoplay: true,
+            autoplayspeed: 3000,
+            speed: 300,
+            slidesToShow: 1
+        });
+        $(".play").click(function() {
+            $(".gallery_img").slick("slickPlay");
+        });
+        $(".pause").click(function() {
+            $(".gallery_img").slick("slickPause");
+        });
+        $(".prev").click(function() {
+            $(".gallery_img").slick("slickPrev");
+        });
+        $(".next").click(function() {
+            $(".gallery_img").slick("slickNext");
+        });
+        
+        // 라이트 갤러리
+        $(".lightgallery").lightGallery();
+        
+        // 로그인 팝업
+        $(".layer").click(function(e) {
+            e.preventDefault();
+            $(".layer").slideDown();
+        });
+        $("#layer .close").click(function(e) {
+            e.preventDefault();
+            $("#layer").slideUp();
+        });
+    </script>
+</body>
+
+</html>
